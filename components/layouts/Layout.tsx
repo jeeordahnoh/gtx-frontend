@@ -1,10 +1,9 @@
 "use client"
-
-// import dynamic from "next/dynamic";
 import React from 'react'
 import { ChakraProvider} from '@chakra-ui/react'
 import theme from '@/theme'
 import Navbar from "./Navbar";
+import Footer from './Footer';
 
 
 const Layout = ({
@@ -17,6 +16,7 @@ const Layout = ({
         <ChakraProvider theme={theme} cssVarsRoot="body">
             <Navbar />
             {children}
+            <Footer />
         </ChakraProvider>
     </>
   )
