@@ -14,4 +14,19 @@ export const navMenus = [
         url: "/transfer",
         name: "Transfer"
     },
+    {
+        id: 4,
+        url: "/wallet",
+        name: "Wallet"
+    },
+    {
+        id: 5,
+        url: "/invest",
+        name: "Invest"
+    },
+    {
+        id: 6,
+        url: "/support",
+        name: "Support"
+    },
 ]

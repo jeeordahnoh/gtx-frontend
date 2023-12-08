@@ -27,3 +27,22 @@ body{
   background-position: right;
   background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .menu-list{
+      display: block !important;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      min-height: calc(100vh - 60px) !important;
+      z-index: 100;
+      background: #121212 !important;
+      top: 60px;
+      right: -1000px;
+      transition: .4s;
+  }
+
+  .menu-active{
+      right: 0 !important;
+  }
+}

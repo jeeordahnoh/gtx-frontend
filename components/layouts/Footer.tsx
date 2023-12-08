@@ -16,7 +16,7 @@ const Footer = () => {
                     </Text>
                 </Box>
                 <SimpleGrid columns={[2,3,5,6]} spacing={3} justifyContent={'center'}>
-                    <UnorderedList listStyleType={'none'} mx={'auto'}>
+                    <UnorderedList listStyleType={'none'}>
                         <ListItem my={5}>
                             <Heading color={'white'} fontSize={'18px'} fontWeight={'bold'} mt={'30px'}>
                                 More about GTX
@@ -93,7 +93,7 @@ const Footer = () => {
                             </Link>
                         </ListItem>
                     </UnorderedList>
-                    <UnorderedList listStyleType={'none'} mx={'auto'}>
+                    <UnorderedList listStyleType={'none'}>
                         <ListItem my={5}>
                             <Heading color={'white'} fontSize={'18px'} fontWeight={'bold'} mt={'30px'}>
                                 Products
@@ -145,7 +145,7 @@ const Footer = () => {
                             </Link>
                         </ListItem>
                     </UnorderedList>
-                    <UnorderedList listStyleType={'none'} mx={'auto'}>
+                    <UnorderedList listStyleType={'none'}>
                         <ListItem my={5}>
                             <Heading color={'white'} fontSize={'18px'} fontWeight={'bold'} mt={'30px'}>
                                 Services
@@ -212,7 +212,7 @@ const Footer = () => {
                             </Link>
                         </ListItem>
                     </UnorderedList>
-                    <UnorderedList listStyleType={'none'} mx={'auto'}>
+                    <UnorderedList listStyleType={'none'}>
                         <ListItem my={5}>
                             <Heading color={'white'} fontSize={'18px'} fontWeight={'bold'} mt={'30px'}>
                                 Buy crypto
@@ -259,7 +259,7 @@ const Footer = () => {
                             </Link>
                         </ListItem>
                     </UnorderedList>
-                    <UnorderedList listStyleType={'none'} mx={'auto'}>
+                    <UnorderedList listStyleType={'none'}>
                         <ListItem my={5}>
                             <Heading color={'white'} fontSize={'18px'} fontWeight={'bold'} mt={'30px'}>
                                 Trade
@@ -338,7 +338,7 @@ const Footer = () => {
                         </Text>
                     </Flex>
                 </SimpleGrid>
-                <Flex justifyContent={'end'} mt={'20px'}>
+                <Flex justifyContent={['start','center','end']} mt={'20px'}>
                     <Box>   
                         <Flex alignItems={'center'} gap={'20px'}>
                             <Heading color={'white'} fontSize={'20px'}>
