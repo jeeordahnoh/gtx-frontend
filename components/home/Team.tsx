@@ -34,9 +34,9 @@ const Team = () => {
                                 {item.content}
                             </Text>
                             <Flex alignItems={'center'} gap={5} mt={5}>
-                                <Link href={item.twitter} style={{ color: '#bbb', fontSize: '18px' }}>
+                                {/* <Link href={item.twitter} style={{ color: '#bbb', fontSize: '18px' }}>
                                     <FaXTwitter />
-                                </Link> 
+                                </Link>  */}
                                 <Link href={item.linkedin} style={{ color: '#bbb', fontSize: '18px' }}>
                                     <FaLinkedin />
                                 </Link> 
