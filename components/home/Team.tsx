@@ -2,7 +2,7 @@ import React from 'react'
 import { Avatar, Box, Container, Flex, Heading, SimpleGrid, Text} from '@chakra-ui/react'
 import { teamMembers } from '@/data/teamMember'
 import Link from 'next/link'
-import { FaLinkedin, FaXTwitter } from 'react-icons/fa6'
+import { FaLinkedin, FaTelegram, FaXTwitter } from 'react-icons/fa6'
 
 const Team = () => {
   return (
@@ -34,10 +34,13 @@ const Team = () => {
                                 {item.content}
                             </Text>
                             <Flex alignItems={'center'} gap={5} mt={5}>
-                                {/* <Link href={item.twitter} style={{ color: '#bbb', fontSize: '18px' }}>
-                                    <FaXTwitter />
-                                </Link>  */}
-                                <Link href={item.linkedin} style={{ color: '#bbb', fontSize: '18px' }}>
+                                {
+                                    item.telegram != '/' ?
+                                    <Link href={item.telegram} target='_blank' style={{ color: '#bbb', fontSize: '18px' }}>
+                                        <FaTelegram />
+                                    </Link> : <></>
+                                }
+                                <Link href={item.linkedin} target='_blank' style={{ color: '#bbb', fontSize: '18px' }}>
                                     <FaLinkedin />
                                 </Link> 
                             </Flex>
