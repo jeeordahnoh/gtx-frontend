@@ -1,8 +1,9 @@
 import { Box, Button, Container, Flex, Heading, Image, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
-import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaTiktok, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaMedium, FaTiktok, FaWhatsapp, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
+import { SiCrunchbase } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -345,29 +346,32 @@ const Footer = () => {
                                 Community
                             </Heading>
                             <Flex gap={'10px'}>
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
+                                <Link href={'https://twitter.com/gtxdotcom'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
                                     <FaXTwitter />
                                 </Link> 
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
-                                    <FaTiktok />
-                                </Link> 
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
+                                <Link href={'https://www.instagram.com/gtxdotcom/'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
                                     <FaInstagram />
                                 </Link> 
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
+                                <Link href={'discord.gg/dVmMCdf9jx'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
                                     <FaDiscord />
                                 </Link> 
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
+                                <Link href={'https://t.me/gtxdotcom'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
                                     <FaTelegramPlane />
                                 </Link> 
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
+                                <Link href={'https://www.facebook.com/profile.php?id=100094228042198'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
                                     <FaFacebook />
                                 </Link> 
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
+                                <Link href={'https://www.linkedin.com/company/gtxdotcom/'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
                                     <FaLinkedin />
                                 </Link> 
-                                <Link href={'/'} style={{ color: '#bbb', fontSize: '16px' }}>
-                                    <FaYoutube />
+                                <Link href={'https://www.crunchbase.com/organization/gtx-91c8'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
+                                    <SiCrunchbase />
+                                </Link> 
+                                <Link href={'https://chat.whatsapp.com/DT7FIAWAJVgIRPHwkCfHfb'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
+                                    <FaWhatsapp />
+                                </Link> 
+                                <Link href={'https://medium.com/@gtxdotcom'} target='_blank' style={{ color: '#bbb', fontSize: '16px' }}>
+                                    <FaMedium />
                                 </Link> 
                             </Flex>
                         </Flex>
